@@ -55,7 +55,6 @@ function onFormSearch(e) {
   e.preventDefault();
   const request = e.currentTarget.elements.searchQuery.value;
   parameters.setQuery(request);
-  getQuery(parameters);
   if (request) {
     try {
       return getQuery(parameters).then(handlingResult);
